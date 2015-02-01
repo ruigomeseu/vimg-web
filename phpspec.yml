@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: Vimg
+        psr4_prefix: Vimg
+        src_path: app
