@@ -24,11 +24,11 @@ class ImagesController extends Controller {
             return response()->json(['success' => false]);
         }
 
-        $expectedHash = hash('sha256', $request->input('device-hash') . 'l3w1ld1mg');
+        $expectedHash = hash('sha256', $request->input('device_id') . 'l3w1ld1mg');
 
-        if($request->input('device_hash') !== $expectedHash)
+        if($request->input('device_hash') != $expectedHash)
         {
-            return response()->json(['success' => false]);
+            return response()->json(['success' => '0']);
         }
 
         $throttler = $throttle->get($request, 3, 1);
