@@ -20,7 +20,14 @@ class ImagesController extends Controller {
 
     public function store(UploadImageRequest $request, Throttle $throttle) {
 
-        if($request->file('image')->getSize() > 1*1024*1024) {
+        if($request->file('image')->getSize() > 2*1024*1024) {
+            return response()->json(['success' => false]);
+        }
+
+        $expectedHash = hash('sha256', $request->input('device-hash') . 'l3w1ld1mg');
+
+        if($request->input('device_hash') !== $expectedHash)
+        {
             return response()->json(['success' => false]);
         }
 
