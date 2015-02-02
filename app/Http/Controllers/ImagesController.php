@@ -12,7 +12,10 @@ class ImagesController extends Controller {
 
         $image = Image::find($id[0]);
 
-        echo '<img src="https://s3.amazonaws.com/vimg.co/' . $image->path , '">';
+
+        $imagePath = 'https://s3.amazonaws.com/vimg.co/' . $image->path;
+
+        return \View::make('show', array('image' => $imagePath));
     }
 
     public function store(UploadImageRequest $request, Throttle $throttle) {
