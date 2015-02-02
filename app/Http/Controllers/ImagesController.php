@@ -24,7 +24,7 @@ class ImagesController extends Controller {
             return response()->json(['success' => false]);
         }
 
-        $expectedHash = hash('sha256', $request->input('device_id') . 'l3w1ld1mg');
+        $expectedHash = strtoupper(hash('sha256', $request->input('device_id') . 'l3w1ld1mg'));
 
         if($request->input('device_hash') != $expectedHash)
         {
