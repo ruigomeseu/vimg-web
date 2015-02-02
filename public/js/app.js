@@ -31,15 +31,27 @@ $( document ).ready(function() {
 
         var imageHeight = document.getElementById('uploaded-image').naturalHeight;
 
-        if(imageHeight > windowHeight)
+        var imageWidth = document.getElementById('uploaded-image').clientWidth;
+
+        var divMaxWidth = $("#image-block").width();
+
+        if((imageHeight > windowHeight) && imageWidth < divMaxWidth)
         {
+            console.log('es here');
             canZoom = true;
             image.removeClass("zoomOut");
             image.addClass("zoomIn")
+        } else {
+            canZoom = false;
+            image.removeClass("zoomIn");
+            image.removeClass("zoomOut");
         }
 
         console.log(imageHeight);
         console.log(windowHeight);
+
+        console.log(imageWidth);
+        console.log(divMaxWidth);
     }
 
 });
