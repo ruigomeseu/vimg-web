@@ -16,7 +16,15 @@ class ImagesController extends Controller {
     {
         $id = \App::make('HashIds')->decode($hashId);
 
+        if(empty($id)) {
+            \App::abort(404);
+        }
+
         $image = Image::find($id[0]);
+
+        if(is_null($image)) {
+            \App::abort(404);
+        }
 
 
         $imagePath = 'https://s3.amazonaws.com/vimg.co/' . $image->path;
