@@ -1,9 +1,7 @@
 <?php
 
 
-Route::get('/', function () {
-    echo 'vimg.co is best host confirmed by cmat confirmer';
-});
+Route::get('/', ['as' => 'index', 'uses' => 'ImagesController@index']);
 
 Route::post('/images', 'ImagesController@store');
 

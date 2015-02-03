@@ -6,6 +6,11 @@ use Vimg\Image;
 
 class ImagesController extends Controller {
 
+    public function index()
+    {
+        return \View::make('index');
+    }
+
 
     public function show($hashId) {
         $id = \App::make('HashIds')->decode($hashId);
