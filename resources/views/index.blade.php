@@ -42,6 +42,10 @@
                     </div><!--//device-holder-->
                 </div><!--//phone-holder-->
                 <div class="clearfix"></div>
+                <div class="arrow-holder text-center">
+                    <p class="lead-text"><a href="mailto:hello@ruigomes.me">Questions? Get in touch!</a></p>
+                    <a href="mailto:hello@ruigomes.me" class="pe-7s-mail pe-3x"></a>
+                </div>
             </div><!--//row-->
         </div><!--//container-->
     </section><!--//promo-->
@@ -49,7 +53,7 @@
 
 <!-- ******FOOTER****** -->
 
-<footer class="footer">
+<footer id="footer" class="footer">
     <div class="container text-center">
         <ul class="links legal-links list-inline">
             <li class="last"><a href="mailto:hello@ruigomes.me">Support</a></li>
