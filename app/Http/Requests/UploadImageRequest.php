@@ -1,7 +1,5 @@
 <?php namespace Vimg\Http\Requests;
 
-use Vimg\Http\Requests\Request;
-
 class UploadImageRequest extends Request {
 
 	/**

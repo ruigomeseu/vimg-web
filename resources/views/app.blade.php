@@ -7,11 +7,11 @@
 	<title>vimg.co - The fastest way to share what you're seeing</title>
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-	<link rel="stylesheet" href="/plugins/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="/plugins/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
-	<link rel="stylesheet" href="/plugins/pe-icon-7-stroke/css/helper.css">
-	<link href="/css/theme.css" rel="stylesheet">
-	<link href="/css/app.css" rel="stylesheet">
+	<link rel="stylesheet" href="/assets/plugins/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/assets/plugins/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+	<link rel="stylesheet" href="/assets/plugins/pe-icon-7-stroke/css/helper.css">
+	<link href="/assets/css/theme.css" rel="stylesheet">
+	<link href="/assets/css/app.css" rel="stylesheet">
 
 	<!-- Fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
@@ -31,6 +31,6 @@
 	<!-- Scripts -->
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
-	<script src="/js/app.js"></script>
+	<script src="/assets/js/app.js"></script>
 </body>
 </html>

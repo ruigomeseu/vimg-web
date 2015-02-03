@@ -12,7 +12,8 @@ class ImagesController extends Controller {
     }
 
 
-    public function show($hashId) {
+    public function show($hashId)
+    {
         $id = \App::make('HashIds')->decode($hashId);
 
         $image = Image::find($id[0]);
@@ -23,8 +24,8 @@ class ImagesController extends Controller {
         return \View::make('show', array('image' => $imagePath));
     }
 
-    public function store(UploadImageRequest $request, Throttle $throttle) {
-
+    public function store(UploadImageRequest $request, Throttle $throttle)
+    {
         if($request->file('image')->getSize() > 2*1024*1024) {
             return response()->json(['success' => false]);
         }
