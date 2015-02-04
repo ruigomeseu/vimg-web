@@ -26,7 +26,6 @@ class ImagesController extends Controller {
             \App::abort(404);
         }
 
-
         $imagePath = 'https://s3.amazonaws.com/vimg.co/' . $image->path;
 
         return \View::make('show', array('image' => $imagePath));
