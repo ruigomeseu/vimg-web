@@ -23,7 +23,7 @@
                 <div class="clearfix visible-sm-block visible-xs-block"></div>
                 <div class="download-area col-md-4 col-sm-6 col-xs-12 col-md-push-4 col-sm-push-6 col-xs-push-0">
                     <ul class="list-unstyled download-buttons">
-                        <li class="app-store"><a href=""{{ config('vimg.app-store-url') }}"><img class="img-responsive" src="/assets/images/buttons/btn-app-store.png" alt="Download from App Store" /></a></li>
+                        <li class="app-store"><a href="{{ config('vimg.app-store-url') }}"><img class="img-responsive" src="/assets/images/buttons/btn-app-store.png" alt="Download from App Store" /></a></li>
                     </ul><!--//list-unstyled-->
                     <ul class="list-unstyled summary">
                         <li><i class="fa fa-check"></i> Capture the moment</li>
